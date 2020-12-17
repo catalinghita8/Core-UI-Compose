@@ -31,7 +31,11 @@ fun MainScreen() {
         color = Color.DarkGray,
         modifier = Modifier.fillMaxSize()
     ) {
-        Row {
+        Row(
+            modifier = Modifier.fillMaxSize(),
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             HorizontalColoredBar(Color.Red)
             HorizontalColoredBar(Color.Magenta)
             HorizontalColoredBar(Color.Cyan)
